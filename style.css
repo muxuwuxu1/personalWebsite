@@ -1,0 +1,111 @@
+
+@font-face{
+    font-family: "avenir";
+    src:local("avenir/AEH.ttf");
+}
+
+body{
+    font-family: avenir;
+    margin: 0px;
+}
+
+.main-header {
+    width: 100%;
+    position: relative;
+    background: transparent;
+    border: 5px solid #83d0f2;
+    border-width: 5px 0 0 0;
+    height: 150px;
+    z-index: 96;
+    clear: both;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav{
+    display: block;
+    z-index: 95;
+    float: right;
+}
+
+.nav-item{
+    display: inline-block;
+    position: relative;
+    line-height: 80px;
+    vertical-align: center;
+    font-size: 16pt;
+    padding: 20px;
+}
+
+.content{
+    display: block;
+    position: relative;
+}
+
+.colored_text {
+    position: relative;
+    z-index: 88;
+    clear: both;
+    background-color: #f5f9fa;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.uncolored_text{
+    position: relative;
+    z-index: 88;
+    clear: both;
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left:auto;
+    right:0;
+    margin-right: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #83d0f2;
+}
