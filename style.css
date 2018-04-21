@@ -4,9 +4,51 @@
     src:local("avenir/AEH.ttf");
 }
 
+@viewport {
+    width: device-width;
+    zoom: 1.0 ;
+  }
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (min-width: 641px) {
+    #dropdown{
+        display: none;
+    }
+    #nav {
+        display: inline-block;
+    }
+    #welcome {
+        display: block;
+        padding-right: 30px;
+        padding-left: 30px
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+} */
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 640px) {
+    #dropdown{
+        display: inline-block;
+    }
+    #nav {
+        display: none;
+    }
+    #welcome {
+        display: none;
+    }
+}
+
 body{
     font-family: avenir;
     margin: 0px;
+}
+
+.logo{
+    float: left;
 }
 
 .main-header {
@@ -16,13 +58,16 @@ body{
     border: 5px solid #83d0f2;
     border-width: 5px 0 0 0;
     height: 150px;
-    z-index: 96;
     clear: both;
 }
 
 a{
     color: black;
     text-decoration: none;
+}
+
+a:hover {
+    color: #83d0f2;
 }
 
 .nav{
@@ -50,7 +95,7 @@ a{
     z-index: 88;
     clear: both;
     background-color: #f5f9fa;
-    padding: 30px 0;
+    padding: 30px 30px;
     text-align: center;
 }
 
@@ -71,25 +116,32 @@ a{
 }
 
 .dropbtn {
+    font-family: avenir;
     color: black;
     padding: 16px;
-    font-size: 20px;
+    font-size: 16pt;
     border: none;
+    position: relative;
+    margin-top: 45px;
+    display: inline-block;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    padding-right: 20px;
+    display: block;
+    z-index: 95;
+    float: right;
 }
 
 .dropdown-content {
     display: none;
-    position: fixed;
+    position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    left:auto;
-    right:0;
+    left: auto;
+    right: 0;
     margin-right: 20px;
 }
 
@@ -108,4 +160,22 @@ a{
 
 .dropdown:hover .dropbtn {
     background-color: #83d0f2;
+}
+
+.banner{
+    position: relative;
+}
+
+.overlay{
+    text-align: center;
+    color: black;
+    font-size: 200%;
+    padding-top: 100px;
+}
+
+#home-banner {
+    background-image: url("https://tinyurl.com/y7ugdesn");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 80%;
 }
