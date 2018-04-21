@@ -82,7 +82,7 @@ a:hover {
     line-height: 80px;
     vertical-align: center;
     font-size: 16pt;
-    padding: 20px;
+    padding: 16px;
 }
 
 .content{
@@ -170,12 +170,13 @@ a:hover {
     text-align: center;
     color: black;
     font-size: 200%;
-    padding-top: 100px;
+    vertical-align: center;
+    padding-top: 5%;
 }
 
 #home-banner {
-    background-image: url("https://tinyurl.com/y7ugdesn");
+    background-image: url("nyc-skyline.png");
     background-repeat: no-repeat;
     background-size: contain;
-    padding-bottom: 80%;
+    padding-bottom: 50%;
 }
