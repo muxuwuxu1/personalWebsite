@@ -45,10 +45,12 @@
 body{
     font-family: avenir;
     margin: 0px;
+    height: 100%;
 }
 
 .logo{
     float: left;
+    padding: 20px 0 0 20px;
 }
 
 .main-header {
@@ -82,7 +84,7 @@ a:hover {
     line-height: 80px;
     vertical-align: center;
     font-size: 16pt;
-    padding: 20px;
+    padding: 16px;
 }
 
 .content{
@@ -170,12 +172,17 @@ a:hover {
     text-align: center;
     color: black;
     font-size: 200%;
-    padding-top: 100px;
+    vertical-align: center;
+    padding-top: 5%;
+    position: relative;
 }
 
 #home-banner {
-    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/d-Wgo33/nyc-new-york-city-panoramic-cityscape-manhattan-skyline-sunny-day-blue-sky-time-lapse_enar36iwl__F0001.png");
+    background-image: url("nyc-new-york-city-panoramic-cityscape-manhattan-skyline-sunny-day-blue-sky-time-lapse_enar36iwl__F0001.png");
     background-repeat: no-repeat;
     background-size: contain;
+    position: fixed;
+    min-width: 100%;
     padding-bottom: 50%;
+    max-height: 0%;
 }
