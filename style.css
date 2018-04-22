@@ -51,6 +51,7 @@ body{
 .logo{
     float: left;
     padding: 20px 0 0 20px;
+    vertical-align: center;
 }
 
 .main-header {
@@ -85,6 +86,7 @@ a:hover {
     vertical-align: center;
     font-size: 16pt;
     padding: 16px;
+    padding-right: 48px;
 }
 
 .content{
@@ -101,11 +103,11 @@ a:hover {
     text-align: center;
 }
 
-.uncolored_text{
+.pics{
     position: relative;
     z-index: 88;
     clear: both;
-    background-color: white;
+    background-color: #f5f9fa;
     padding: 30px 0;
     text-align: center;
 }
